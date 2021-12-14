@@ -7,6 +7,8 @@
   --primary-white: #fff;
   --primary-orange: #f9ab00;
   --primary-dark: rgba(255,255,255,0);
+  --primary-red: #ef4035;
+  --primary-hover-red: #f33501;
 }
 
 .App {
@@ -84,4 +86,60 @@ nav ul li {
 }
 .navbar-nav > li > a:hover{
   border-top:0.1875rem solid var(--primary-orange)
+}
+
+
+/* ---------header--------- */
+
+
+.header-wraper{
+  position: relative;
+  background: url(back.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+
+}
+
+.main-info{
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+
+}
+.main-info h1{
+  color: #0a0a0a;
+  text-transform: uppercase;
+}
+
+
+.typed-text{
+  font-size: 2rem;
+  color: var(--primary-white);
+}
+
+
+
+
+.btn-main-offer{
+  border: 2px solid #000000 ;
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 0.625rem  0.65rem 0.65rem 0.65rem;
+  color: var(--primary-hover-red);
+  font-size: 1.5rem;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 2rem;
+}
+.btn-main-offer:hover{
+  text-decoration: none;
+  background-color: var(--primary-hover-red);
 }
